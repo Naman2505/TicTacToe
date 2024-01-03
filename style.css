@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding:0;
+    color:#B23EE0;
+    font-family:'Public Pixel','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    text-align: center;
+    padding: 35px;
+    font-size: 2rem;
+}
+.playeroption{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    box-shadow: #B23EE0 3px 3px 3px;
+}
+.option{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin:0 200px;
+    border :none;
+}
+.computer{
+    box-shadow: #B23EE0 3px 3px,#B23EE0 -3px 3px,#B23EE0 -3px -3px 3px,#B23EE0 3px -3px 3px;
+    background: linear-gradient(rgba(95, 3, 3, 0.2),rgba(70, 68, 68, 0.2));
+}
+.player2{
+    box-shadow: #B23EE0 3px 3px,#B23EE0 -3px 3px,#B23EE0 -3px -3px 3px,#B23EE0 3px -3px 3px;
+    background: linear-gradient(rgba(95, 3, 3, 0.2),rgba(70, 68, 68, 0.2));
+}
+.start-div{
+    text-align: center;
+    height:100px;
+}
+.start{
+    margin: 20px;
+    width: 200px;
+    height: 75px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+}
+.start:hover{
+    box-shadow: #B23EE0 3px 3px,#B23EE0 -3px 3px,#B23EE0 -3px -3px 3px,#B23EE0 3px -3px 3px;
+    background: linear-gradient(rgba(95, 3, 3, 0.2),rgba(70, 68, 68, 0.2));
+}
