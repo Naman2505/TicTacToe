@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:#B23EE0;
+    font-family:'Public Pixel','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    text-align: center;
+    padding: 20px 0;
+}
+.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100px;
+}
+.back,.reset{
+    margin:0 10px;
+}
+.back:hover,.reset:hover{
+    box-shadow: #B23EE0 3px 3px,#B23EE0 -3px 3px,#B23EE0 -3px -3px 3px,#B23EE0 3px -3px 3px;
+    background: linear-gradient(rgba(95, 3, 3, 0.2),rgba(70, 68, 68, 0.2));
+}
+.player1{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin-right: 75px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player1Img{
+    height: 50px;
+    width: 50px;
+    background-image: url("/circle.png");
+    background-size: contain;
+    background-position: center center;
+}
+.player-selected{
+    box-shadow: #B23EE0 3px 3px,#B23EE0 -3px 3px,#B23EE0 -3px -3px 3px,#B23EE0 3px -3px 3px;
+    background: linear-gradient(rgba(95, 3, 3, 0.2),rgba(70, 68, 68, 0.2));
+}
+.player2{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+}
+.player2Img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    background-image: url("/cross.png");
+    background-size: contain;
+    background-position: center center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.board{
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-rows: auto auto auto;
+}
+.cell{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: transparent;
+}
+.X{
+    background-position: center center;
+    background-image: url("/cross.png");
+    background-size: contain;
+}
+.O{
+    background-position: center center;
+    background-image: url("/circle.png");
+    background-size: contain;
+}
+
+.winX{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5)),url(/cross.png);
+}
+.winO{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5)),url(/circle.png);
+}
